@@ -75,16 +75,48 @@ once you create the account, now let's try to open the studio.
 
 It will open a new tab. This will take a while, since it needs to initialize the studio that we are going to use.
 
-
-
-
-
-
 37. in your sagemaker studio, Click the lowest icon.
 38. click `Create project`
 39. click `Organization templates`
 40. choose `SageMaker Safe Deployment Pipeline`
 41. click `Select project template`
+
+    ![](../images/PrepareInfra/41.png)
+
 42. in project name, fill it with `sagemaker-safe-deployment-proj`
+
+    ![](../images/PrepareInfra/42.png)
+
 43. change the email address to your email address.
 44. click `create project`
+
+We need to wait for a while. This runs cloudformation stack behind the scene, taken from service catalog.
+
+45. click `Clone repo`
+
+    ![](../images/PrepareInfra/45.png)
+
+46. in clone repository page, click `Clone Repository`
+47. once the clone is done, click the top icon, and click `notebook` folder
+
+    ![](../images/PrepareInfra/47.png)
+
+48. click `mlops.ipynb` file
+49. in select kernel page, choose `Python 3 (Data Science)` and click `Select`
+50. in importing packages, please include this code
+
+```
+!{sys.executable} -m pip install seaborn --upgrade
+```
+
+
+    ![](../images/PrepareInfra/50.png)
+
+We need the service catalog name that has been deployed.
+51. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#provisioned-products)
+52. in provisioned products, change the filter to `Account`
+53. copy the name of your project (similar to `sagemaker-safe-deployment-proj-<random-strings>`)
+
+    ![](../images/PrepareInfra/53.png)
+
+[BACK TO WORKSHOP GUIDE :house:](../README.md)
