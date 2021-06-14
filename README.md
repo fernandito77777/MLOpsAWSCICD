@@ -2,7 +2,7 @@
 
 Here is the original page of the [tutorial of MLOps](https://mlops-safe-deployment-pipeline.workshop.aws/)
 
-    ![](images/Architecture.jpg)
+    ![](images/Arch.jpg)
 
 ### Agenda
 * Prepare for SageMaker Studio
