@@ -1,3 +1,0 @@
-## Prepare Project
-
-1. 

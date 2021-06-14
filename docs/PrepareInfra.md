@@ -43,9 +43,15 @@ Now, remove the constraints that service catalog have
 
 25. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#portfolios?activeTab=localAdminPortfolios)
 26. click your Local Portofolios
+
+    ![](../images/PrepareInfra/26.png)
+
 27. click `Constraints` tab
 28. click the radio button besides the constraints
 29. click `Delete constraint`
+
+    ![](../images/PrepareInfra/29.png)
+
 30. Type `delete` and click `delete` button.
 
 Once it's done, let's go back to the SageMaker.
