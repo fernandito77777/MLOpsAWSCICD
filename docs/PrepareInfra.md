@@ -105,7 +105,7 @@ We need to wait for a while. This runs cloudformation stack behind the scene, ta
 49. in select kernel page, choose `Python 3 (Data Science)` and click `Select`
 50. in importing packages, please include this code
 
-    ![](../images/PrepareInfra/50.png)
+    
 
     You can copy this code to add it to your notebook.
 
