@@ -120,4 +120,7 @@ We need the service catalog name that has been deployed.
 53. copy the name of your project (similar to `sagemaker-safe-deployment-proj-<random-strings>`)
     ![](../images/PrepareInfra/53.png)
 
+54. paste it into `PROJECT_NAME` in your notebook
+    ![](../images/PrepareInfra/54.png)
+
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
