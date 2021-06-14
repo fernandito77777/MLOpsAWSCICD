@@ -123,6 +123,6 @@ We need the service catalog name that has been deployed.
 54. paste it into `PROJECT_NAME` in your notebook
     ![](../images/PrepareInfra/54.png)
 
-55. please go to the next step by following the instruction on notebook by reffering to Data Prep [Here](https://mlops-safe-deployment-pipeline.workshop.aws/01_data_prep.html)
+55. please go to the next step by following the instruction on notebook by reffering to Getting Started [Install notebook dependencies](https://mlops-safe-deployment-pipeline.workshop.aws/00_overview/020_launch_sagemaker_notebook.html#install-notebook-dependencies)
 
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
