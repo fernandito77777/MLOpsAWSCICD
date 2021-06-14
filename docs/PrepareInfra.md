@@ -123,4 +123,6 @@ We need the service catalog name that has been deployed.
 54. paste it into `PROJECT_NAME` in your notebook
     ![](../images/PrepareInfra/54.png)
 
+55. please go to the next step on Data Prep [Here](https://mlops-safe-deployment-pipeline.workshop.aws/01_data_prep.html)
+
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
