@@ -114,6 +114,7 @@ We need to wait for a while. This runs cloudformation stack behind the scene, ta
 ```
 
 We need the service catalog name that has been deployed.
+
 51. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#provisioned-products)
 52. in provisioned products, change the filter to `Account`
 53. copy the name of your project (similar to `sagemaker-safe-deployment-proj-<random-strings>`)
