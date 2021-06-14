@@ -105,12 +105,13 @@ We need to wait for a while. This runs cloudformation stack behind the scene, ta
 49. in select kernel page, choose `Python 3 (Data Science)` and click `Select`
 50. in importing packages, please include this code
 
+    ![](../images/PrepareInfra/50.png)
+
+    You can copy this code to add it to your notebook.
+
 ```
 !{sys.executable} -m pip install seaborn --upgrade
 ```
-
-
-    ![](../images/PrepareInfra/50.png)
 
 We need the service catalog name that has been deployed.
 51. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#provisioned-products)
