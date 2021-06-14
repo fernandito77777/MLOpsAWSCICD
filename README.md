@@ -2,9 +2,7 @@
 
 Here is the original page of the [tutorial of MLOps](https://mlops-safe-deployment-pipeline.workshop.aws/)
 
-    ![](images/Arch.png)
-
-### Agenda
+### Notes
 * Prepare for SageMaker Studio
     1. [Launch SageMaker Studio and Prepare Infrastructure](docs/PrepareInfra.md)
     2. [Prepare Project](docs/PrepareProject.md)
