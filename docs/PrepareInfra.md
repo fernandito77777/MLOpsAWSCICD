@@ -4,13 +4,13 @@
 2. click `Amazon SageMaker Studio`
 3. click `Standard Setup` and choose `AWS Identity and Access Management (IAM)`
 
-    ![](../images/PrepareInfra/3.jpg)
+    ![](../images/PrepareInfra/3.png)
 
 4. in Permission, click `Create a new role`
 5. In specifying S3 bucket, leave it as default and click `create role`. Make sure you write down the name of your role.
 6. Click Submit
 
-    ![](../images/PrepareInfra/6.jpg)
+    ![](../images/PrepareInfra/6.png)
 
 
 This might take a while to run. While waiting, now we are going to try to deploy our infrastructure template using CloudFormation
@@ -20,7 +20,7 @@ This might take a while to run. While waiting, now we are going to try to deploy
 9. Please check the checkbox on Capabilities iAM
 10. Click `Create Stack`
 
-    ![](../images/PrepareInfra/10.jpg)
+    ![](../images/PrepareInfra/10.png)
 
 
 This might take a while to run. Meanwhile, let's create a user for your sagemaker studio
@@ -28,19 +28,19 @@ This might take a while to run. Meanwhile, let's create a user for your sagemake
 11. Go to [SageMaker Console](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/landing) and click `Amazon SageMaker Studio`
 12. in your SageMaker Studio Control Panel, click `Add user`
 
-    ![](../images/PrepareInfra/12.jpg)
+    ![](../images/PrepareInfra/12.png)
 
 13. in user name, fill your name.
 14. in Execution role, choose the sagemaker role you have created (The one that looks like `AmazonSageMaker-ExecutionRole-<random-numbers-here>`)
 15. click `Submit`
 
-    ![](../images/PrepareInfra/15.jpg)
+    ![](../images/PrepareInfra/15.png)
 
 once you create the account, now let's try to open the studio.
 
 16. click `Open Studio`
 
-    ![](../images/PrepareInfra/16.jpg)
+    ![](../images/PrepareInfra/16.png)
 
 This will take a while, since it needs to initialize the studio that we are going to use. Now, during waiting, let's try to give some required permission to the role.
 
@@ -49,7 +49,7 @@ This will take a while, since it needs to initialize the studio that we are goin
 19. find your role in search bar by typing your sagemaker role name (The one that looks like `AmazonSageMaker-ExecutionRole-<random-numbers-here>`)
 20. click the role name.
 
-    ![](../images/PrepareInfra/20.jpg)
+    ![](../images/PrepareInfra/20.png)
 
 21. In permission tab, click `Attach policies`
 22. Search for `CloudFormationFullAccess`
