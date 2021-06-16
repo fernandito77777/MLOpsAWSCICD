@@ -41,71 +41,71 @@ This might take a while to run. Meanwhile, let's give the user permission for Se
 
 Now, remove the constraints that service catalog have
 
-25. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#portfolios?activeTab=localAdminPortfolios)
-26. click your Local Portofolios
+19. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#portfolios?activeTab=localAdminPortfolios)
+20. click your Local Portofolios
 
     ![](../images/PrepareInfra/26.png)
 
-27. click `Constraints` tab
-28. click the radio button besides the constraints
-29. click `Delete constraint`
+21. click `Constraints` tab
+22. click the radio button besides the constraints
+23. click `Delete constraint`
 
     ![](../images/PrepareInfra/29.png)
 
-30. Type `delete` and click `delete` button.
+24. Type `delete` and click `delete` button.
 
 Once it's done, let's go back to the SageMaker.
 
-31. Go to [SageMaker Console](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/landing) and click `Amazon SageMaker Studio`
-32. in your SageMaker Studio Control Panel, click `Add user`
+25. Go to [SageMaker Console](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/landing) and click `Amazon SageMaker Studio`
+26. in your SageMaker Studio Control Panel, click `Add user`
 
     ![](../images/PrepareInfra/32.png)
 
-33. in user name, fill your name.
-34. in Execution role, choose the sagemaker role you have created (The one that looks like `AmazonSageMaker-ExecutionRole-<random-numbers-here>`)
-35. click `Submit`
+27. in user name, fill your name.
+28. in Execution role, choose the sagemaker role you have created (The one that looks like `AmazonSageMaker-ExecutionRole-<random-numbers-here>`)
+29. click `Submit`
 
     ![](../images/PrepareInfra/35.png)
 
 once you create the account, now let's try to open the studio.
 
-16. click `Open Studio`
+30. click `Open Studio`
 
     ![](../images/PrepareInfra/36.png)
 
 It will open a new tab. This will take a while, since it needs to initialize the studio that we are going to use.
 
-37. in your sagemaker studio, Click the lowest icon.
-38. click `Create project`
-39. click `Organization templates`
-40. choose `SageMaker Safe Deployment Pipeline`
-41. click `Select project template`
+31. in your sagemaker studio, Click the lowest icon.
+32. click `Create project`
+33. click `Organization templates`
+34. choose `SageMaker Safe Deployment Pipeline`
+35. click `Select project template`
 
     ![](../images/PrepareInfra/41.png)
 
-42. in project name, fill it with `sagemaker-safe-deployment-proj`
+36. in project name, fill it with `sagemaker-safe-deployment-proj`
 
     ![](../images/PrepareInfra/42.png)
 
-43. change the email address to your email address.
-44. click `create project`
+37. change the email address to your email address.
+38. click `create project`
 
 We need to wait for a while. This runs cloudformation stack behind the scene, taken from service catalog.
 
-45. click `Clone repo`
+39. click `Clone repo`
 
     ![](../images/PrepareInfra/45.png)
 
-46. in clone repository page, click `Clone Repository`
-47. once the clone is done, click the top icon, and click `notebook` folder
+40. in clone repository page, click `Clone Repository`
+41. once the clone is done, click the top icon, and click `notebook` folder
 
     ![](../images/PrepareInfra/47.png)
 
-48. click `mlops.ipynb` file
-49. in select kernel page, choose `Python 3 (Data Science)` and click `Select`
-50. in importing packages, please include this code
+42. click `mlops.ipynb` file
+43. in select kernel page, choose `Python 3 (Data Science)` and click `Select`
+44. in importing packages, please include this code
 
-    
+    ![](../images/PrepareInfra/50.png)
 
     You can copy this code to add it to your notebook.
 
@@ -115,14 +115,14 @@ We need to wait for a while. This runs cloudformation stack behind the scene, ta
 
 We need the service catalog name that has been deployed.
 
-51. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#provisioned-products)
-52. in provisioned products, change the filter to `Account`
-53. copy the name of your project (similar to `sagemaker-safe-deployment-proj-<random-strings>`)
+45. go to [Service Catalog Console](https://console.aws.amazon.com/servicecatalog/home?region=us-east-1#provisioned-products)
+46. in provisioned products, change the filter to `Account`
+47. copy the name of your project (similar to `sagemaker-safe-deployment-proj-<random-strings>`)
     ![](../images/PrepareInfra/53.png)
 
-54. paste it into `PROJECT_NAME` in your notebook
+48. paste it into `PROJECT_NAME` in your notebook
     ![](../images/PrepareInfra/54.png)
 
-55. please go to the next step by following the instruction on notebook by reffering to Getting Started [Install notebook dependencies](https://mlops-safe-deployment-pipeline.workshop.aws/00_overview/020_launch_sagemaker_notebook.html#install-notebook-dependencies)
+49. please go to the next step by following the instruction on notebook by reffering to Getting Started [Install notebook dependencies](https://mlops-safe-deployment-pipeline.workshop.aws/00_overview/020_launch_sagemaker_notebook.html#install-notebook-dependencies)
 
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
