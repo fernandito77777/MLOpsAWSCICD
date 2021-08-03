@@ -8,14 +8,17 @@ in training process, we are going to focus towards the processing of the model. 
 the workflow is being created from build process. the build process have executed the infractusture template `/custom_resource/sagemaker-custom-resource.yml`. Here are the descriptions:
 - it will create lambda function, for each of the workflow. (check the handler name, with function name)
 - handler name format will be `local-script-name.lambda_handler`
+
     ![](../images/Train/1.1.png)
 
 
 - in each of the script, it needs to create function named `lambda_handler`. assume this function is a main function.
+
     ![](../images/Train/1.2.png)
 
 
 this is the workflow process result, with each of the functions.
+
     ![](../images/Build/1.3.png)
 
 

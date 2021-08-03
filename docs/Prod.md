@@ -16,7 +16,9 @@ In `/assets/deploy-model-prd.yml`, there are things that you might need to take 
 - `/api/pre_traffic_hook.py` is a hook (validation for lambda invocation function) to validate if the endpoint is in service or dead.
 - `/api/post_traffic_hook.py` is a hook to log the API calls, for auditing purpose.
 - `Canary10Percent5Minutes` is a canary method deployment for the model.
+
     ![](../images/Prod/3.png)
+    
 
 4. Fetch the name of the endpoint.
 5. Check the prod deployment status.

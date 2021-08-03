@@ -17,22 +17,27 @@ In Building process, we are going to use `CodeBuild`. CodeBuild process can be d
 
 - it's divided by "Phases", or stages of building and testing your ML code.
 - in install phase, it's being used to install libraries that will be use to execute the ML Code (python, boto3). might specify `requirements.txt` file to specify all libraries that you need.
+
     ![](../images/Build/5.1.png)
 
 
 - pre-build phase, will get variables that will be used during building process
+
     ![](../images/Build/5.2.png)
 
 
 - build phase, execute the code. it will execute `/model/run_pipeline.py` code with parameters specified.
+
     ![](../images/Build/5.3.png)
 
 
 - post-build phase, will create artifact that will be used for next step on deployment. This case, will create template workflow file for training (`/custom_resource/sagemaker-custom-resource.yml`) and template infrastructure file for deployment (`/assets/deploy-model-prd.yml`).
+
     ![](../images/Build/5.4.png)
 
 
 - artifacts, supported file for next step of deployment.
+
     ![](../images/Build/5.5.png)
 
 
