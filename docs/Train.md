@@ -18,7 +18,8 @@ the workflow is being created from build process. the build process have execute
 
 
 this is the workflow process result, with each of the functions.
-    ![](../images/Train/1.3.png)
+
+<img src="../images/Train/1.3.png" alt="drawing" style="max-width:200px;"/>
 
 
 Workflow explanation:

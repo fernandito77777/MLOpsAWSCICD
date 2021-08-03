@@ -21,7 +21,7 @@ incoming requests to the endpoint, as well as the results from the ML model, are
 
 If you check the `/assets/deploy-model-prd.yml`, there is a scheduler for SageMaker Model Monitor, set for each hour, on minute 0 with cron expression.
 
-    ![](../images/Monitor/8new.png)
+<img src="../images/Monitor/8.png" alt="drawing"/>
 
 
 9. fetch completed Model Monitor result. Might encounter violation (the data is not following the constraints)
