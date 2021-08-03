@@ -113,11 +113,11 @@ We need to wait for a while. This runs cloudformation stack behind the scene, ta
 !{sys.executable} -m pip install seaborn --upgrade
 ```
 
-48. Copy this project name `sagemaker-safe-deployment-proj` and paste it into `PROJECT_NAME` in your notebook
-    ![](../images/PrepareInfra/48.png)
+45. Copy this project name `sagemaker-safe-deployment-proj` and paste it into `PROJECT_NAME` in your notebook
+    ![](../images/PrepareInfra/45.png)
 
-49. Please execute this file first, then click reset kernel. this is to install and update the libraries.
-    ![](../images/PrepareInfra/49.png)
+46. Please execute this file first, then click reset kernel. this is to install and update the libraries.
+    ![](../images/PrepareInfra/46.png)
 
 [BACK TO WORKSHOP GUIDE :house:](../README.md)
 

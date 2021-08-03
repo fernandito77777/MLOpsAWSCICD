@@ -19,7 +19,7 @@ the workflow is being created from build process. the build process have execute
 
 this is the workflow process result, with each of the functions.
 
-    ![](../images/Build/1.3.png)
+    ![](../images/Train/1.3.png)
 
 
 Workflow explanation:
