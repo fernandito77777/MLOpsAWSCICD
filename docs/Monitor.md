@@ -20,6 +20,7 @@ incoming requests to the endpoint, as well as the results from the ML model, are
 8. check the schedule time
 
 If you check the `/assets/deploy-model-prd.yml`, there is a scheduler for SageMaker Model Monitor, set for each hour, on minute 0 with cron expression.
+
     ![](../images/Monitor/8new.png)
 
 
